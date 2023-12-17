@@ -4,6 +4,7 @@
 -fast we build login and singup page(after login then it will goes to browser  page)
 -   In our browse page we have :-
    - Header
+   - Login Form
    - Main Movie
      - tailer in Background
      - movie title and description and playbutton
