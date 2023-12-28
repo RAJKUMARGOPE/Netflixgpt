@@ -13,3 +13,16 @@
 
  - Netflix gpt 
  - with serach bar 
+
+ # These are we developed :-
+ - Header
+ - routing our App
+ - SignIn?signUP Form
+ - valiadtion
+ - firbase setup
+ - deploye app to production
+ - singin signout features
+ - we use api for movies from TMDB
+
+
+ 
