@@ -3,10 +3,7 @@ import Header from './Header'
 import { checkvalidate } from '../utils/Checkvalidate'
 import { auth } from '../utils/firebase'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
-
-
-
-
+import { BG_IMG } from '../utils/constants';
 
 const Login = () => {
   
@@ -61,12 +58,13 @@ const Login = () => {
             <Header />
             <div className='absolute'>
                 <img
+                className='h-screen object-cover w-screen'
                     alt='background'
-                    src='https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg' />
+                    src= {BG_IMG}/>
             </div>
             <form
                 onSubmit={(event) => event.preventDefault()}
-                className='bg-black absolute p-12 my-36 w-3/12 mx-auto right-0 left-0 h-[480px] bg-opacity-80 text-white '>
+                className='bg-black  absolute p-12 my-36 w-full md:w-3/12 md:mx-auto right-0 left-0 h-[480px] bg-opacity-80 text-white '>
                 <h1
                     className='font-bold  text-3xl py-4'>
                     {issign ? "Sign In" : "Sign Up"}</h1>
